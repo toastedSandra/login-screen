@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+@include mat-core();
+$config: mat-typography-config();
+
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+$candy-app-warn:    mat-palette($mat-red);
+
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+
+@include angular-material-theme($candy-app-theme);
+
+//Variables
+@import "styles/variables";
+
+//Fonts
+@font-face {
+    font-family: 'Moderat';
+    src: url("styles/fonts/moderat-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'lato-reg';
+    src: url("styles/fonts/lato-v14-latin-ext_latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'lato-bold';
+    src: url("styles/fonts/lato-v14-latin-ext_latin-700.woff2") format("woff2");
+}
+
+
+//Global 
+body {
+    font-family: lato-reg;
+    font-weight: normal;
+    background: $background; 
+}
+
+html {
+    font-size: 14px;
+}
+
+h1 {
+    color: $primary;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+    white-space: normal;
+    font-size: 1.7rem; 
+    font-family: Moderat;
+}
+
+a {
+    color: $light-text;
+
+    &:hover {
+        color: $secondary;
+        text-decoration: none;
+    }
+}
+
+//Login Box 
+.login-box {
+    background-color: white;
+    box-shadow: 1px 4px 1.5rem #d0cee4;
+    padding: 1rem;
+
+    .mat-form-field-label {
+        color: $light-text;
+    }
+
+    .list-inline {
+        letter-spacing: .01em;
+        line-height: 2rem;
+    }
+}
+
+//Bootstrap Override 
+.container {
+    width: 50%;
+}
+
+.btn-primary {
+    background: $secondary;
+    border: $secondary;
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn-primary:hover {
+    background: $primary;
+    border: $primary;
+}
