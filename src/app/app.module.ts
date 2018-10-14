@@ -5,10 +5,16 @@ import { AppComponent } from './app.component';
 import { MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { ResetComponent } from './reset/reset.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    ResetComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,

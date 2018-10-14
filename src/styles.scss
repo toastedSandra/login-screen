@@ -3,8 +3,8 @@
 @import url('//fonts.googleapis.com/icon?family=Material+Icons');
 
 @include mat-core();
-$config: mat-typography-config();
 
+$config: mat-typography-config();
 $candy-app-primary: mat-palette($mat-indigo);
 $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 $candy-app-warn:    mat-palette($mat-red);
@@ -43,14 +43,21 @@ html {
     font-size: 14px;
 }
 
-h1 {
+h1, h2 {
     color: $primary;
     display: block;
     text-align: center;
     line-height: 1.2;
     white-space: normal;
-    font-size: 1.7rem; 
     font-family: Moderat;
+}
+
+h1 {
+    font-size: 1.3rem; 
+}
+
+h2 {
+    font-size: 1.1rem; 
 }
 
 a {
@@ -93,4 +100,14 @@ a {
 .btn-primary:hover {
     background: $primary;
     border: $primary;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+width: 100%;
 }
