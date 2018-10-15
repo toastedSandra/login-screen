@@ -1,0 +1,28 @@
+//MOBILE CSS 
+@media (min-width: $breakpoint-mobile)  {
+    .container {
+        width: 70%;
+    }
+}
+
+//Tablet CSS 
+@media (min-width: $breakpoint-tablet)  {
+    .container {
+        width: 60%;
+    }
+}
+
+//Desktop Medium CSS    
+@media (min-width: $breakpoint-desktopmd)  {
+    .container {
+        width: 60%;
+    }
+}
+
+//Desktop Large CSS
+@media (min-width: $breakpoint-desktoplg) {
+    .container {
+        width: 40%;
+    }
+}
+    

@@ -1,0 +1,22 @@
+//Bootstrap Overrides
+.btn-primary {
+    background: $secondary;
+    border: $secondary;
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn-primary:hover {
+    background: $primary;
+    border: $primary;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+width: 100%;
+}

@@ -1,0 +1,23 @@
+//Login Box 
+.login-box {
+    background-color: white;
+    box-shadow: 1px 4px 1.5rem #d0cee4;
+    padding: 1rem;
+
+    .mat-form-field-label {
+        color: $light-text;
+    }
+
+    .list-inline {
+        letter-spacing: .01em;
+        line-height: 2rem;
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+        background-color: $unselected;
+    }
+    
+    .mat-form-field.mat-focused .mat-form-field-ripple {
+        background-color: $selectedField;
+    }
+}
