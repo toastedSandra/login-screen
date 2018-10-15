@@ -8,6 +8,10 @@ Please review and then I can discuss with you tomorrow at 4:30pm.
 3) Created the routing between each section 
 4) Added animations
 
+Exercise 2: Improve the design
+
+I will demo the improved design tomorrow when we meet. That way I can explain my design choices.
+
 # SemmleLogin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
